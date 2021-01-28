@@ -104,8 +104,10 @@ span {
 		14px 14px #69159E;
 }
 
-i {
+.bi-arrow-down {
 	font-size: 5rem;
+	color: white;
+	text-decoration: none;
 }
 
 
