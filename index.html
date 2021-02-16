@@ -1,88 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html>
 <head>
     <meta charset = 'UTF-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spookybastian</title>
-	<link rel="icon" type="image/png" href="resources/favicon.png">
-	<link href='portfolioStyle.css' type='text/css' rel='stylesheet'>
+    <title>Sebastian K</title>
+	<link rel="icon" type="image/png" href="resources/favicon.png">   <!-- Add favicon later -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link href='style.css' type='text/css' rel='stylesheet'>
 </head>
 	
 <body>
-	<nav id="navbar">
-		<a class="navlink" href="#welcome-section">Welcome</a>
-		<a class="navlink" href="#projects">Projects</a>
-		<a class="navlink" href="#links">Contact</a>
-	</nav>
-	
-	
-	<section id="welcome-section">
-		<h1>Hello, you can call me <br>
-			<span>Sebastian</span><br>
-			and this is my portfolio</h1>
-		<a href="#projects" class="bi bi-arrow-down"></a>
-	</section>
-	
-	<section id="projects">
-		<h2>Deployed Projects</h2>
-		<div class="projectcontainer">
-			<a class="projectlink" href="https://loufjohn.com" target="_blank">
-				<figure class="project-tile">
-					<img class="project-image" src="resources/johnlouf.png" alt="Landing page (person)"/>
-					<figcaption>John's Landing Page</figcaption>
-				</figure>
-			</a>
+
+	<section id="welcome-section" class="container-fluid d-flex flex-column justify-content-evenly align-items-center">
+		<div class="d-flex justify-content-center align-items-center">
+			<img id="profilepic" src="resources/profile.jpg" alt="Selfie">
+			<div id="profiletext" class="text-start">
+				<h1>Sebastian K</h1>
+				<p class="fs-5 fw-light">20, College Student</p>
+			</div>
 		</div>
-	
+
+		<a class="bi bi-arrow-down" href="#projects-section"></a>
 	</section>
-	
-	<section id="practice">
-		<h2>Practice Projects</h2>
-		<div class="projectcontainer">
-			<a class="projectlink" href="https://codepen.io/Spookybastian/full/wvzEYPq" target="_blank">
-				<figure class="project-tile">
-					<img class="project-image" src="resources/tribute.png" alt="tribute page"/>
-					<figcaption>Tribute Page</figcaption>
+
+	<div id="main" class="container-fluid">
+
+		<section id="projects-section" class="container-fluid text-center">
+			<h2 class="fw-normal">Deployed Projects</h2>
+			<div class="separator"></div>
+			<div id="deployed-container" class="container-fluid d-sm-flex flex-wrap justify-content-evenly">
+				<figure class="project">
+					<a target="_blank" href="#">
+						<img class="project-image" src="resources/johnlouf.png"/>
+						<figcaption class="fs-5">John's Landing Page</figcaption>
+					</a>
 				</figure>
-			</a>
+			</div>
+
+			<h2 class="fw-normal">Practice Projects</h2>
+			<div class="separator"></div>
+			<div id="practice-container" class="container-fluid d-sm-flex flex-wrap justify-content-evenly">
+			<figure class="project">
+				<a target="_blank" href="#">
+					<img class="project-image" src="resources/survey.png"/>
+					<figcaption class="fs-5">Survey Page</figcaption>
+				</a>
+			</figure>
+
+			<figure class="project">
+				<a target="_blank" href="#">
+					<img class="project-image" src="resources/tribute.png"/>
+					<figcaption class="fs-5">Tribute Page</figcaption>
+				</a>
+			</figure>
+
+			<figure class="project">
+				<a target="_blank" href="#">
+					<img class="project-image" src="resources/product.png"/>
+					<figcaption class="fs-5">Landing Page</figcaption>
+				</a>
+			</figure>
+
+			<figure class="project">
+				<a target="_blank" href="#">
+					<img class="project-image" src="resources/documentation.png"/>
+					<figcaption class="fs-5">Documentation Page</figcaption>
+				</a>
+			</figure>
+			</div>
+		</section>
+
+		<section id="contact-section" class="container-fluid text-center">
+			<h2 class="fw-normal">Places</h2>
+			<div class="separator"></div>
 			
-			<a class="projectlink" href="https://codepen.io/Spookybastian/full/poEqzgN" target="_blank">
-				<figure class="project-tile">
-					<img class="project-image" src="resources/survey.png" alt="survey form"/>
-					<figcaption>Survey Form</figcaption>
-				</figure>
-			</a>
-			
-			<a class="projectlink" href="https://codepen.io/Spookybastian/full/zYKeMQQ" target="_blank">
-				<figure class="project-tile">
-					<img class="project-image" src="resources/product.png" alt="landing page (product)"/>
-					<figcaption>Landing Page (Product)</figcaption>
-				</figure>
-			</a>
-			
-			<a class="projectlink" href="https://codepen.io/Spookybastian/full/abmxORy" target="_blank">
-				<figure class="project-tile">
-					<img class="project-image" src="resources/documentation.png" alt="documentation page"/>
-					<figcaption>Documentation Page</figcaption>
-				</figure>
-			</a>
-			
-		</div>
-	</section>
-	
-	
-	<footer>
-		<h2>Places you can find me</h2>
-		<div id="links">
-			<a href="https://www.freecodecamp.org/spookybastian" target="_blank">
-				<img src="resources/freecodecamp.png" alt="freeCodeCamp"/>
-			</a>
-			
-			<a href="https://github.com/Spookybastian" target="_blank">
-				<img src="resources/github.png" alt="GitHub"/>
-			</a>
-		</div>
-	</footer>
+			<div id="contact-container" class="container-fluid d-flex justify-content-center align-items-center">
+				<div id="freecodecamp" class="link">
+					<a href="https://www.freecodecamp.org/spookybastian" target="_blank">
+						<img class="img-fluid" src="resources/freecodecamp.png" alt="freecodecamp link" />
+					</a>
+				</div>
+				<div id="github" class="link">
+					<a href="https://github.com/Spookybastian" target="_blank">
+						<img class="img-fluid" src="resources/github.png" alt="github link" />
+					</a>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
-</html>
