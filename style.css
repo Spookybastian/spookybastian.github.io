@@ -1,13 +1,14 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 html {
+    background-image: url("resources/background2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 	scroll-behavior: smooth;
 }
 
 body {
-    background-image: url("resources/background2.jpg");
-    background-position: center top;
-    background-attachment: fixed;
+    background-color: transparent;
 }
 
 a,
@@ -87,16 +88,8 @@ figcaption {
     width: 4rem;
 }
 
-/* Fix for the background jumping when the URL bar auto-hides in mobile */
-@media (orientation: portrait) {
-    body {
-       background-size: auto 150%; 
-    }
-}
-
 @media (orientation: landscape) {
-    body {
-       background-size: cover;
+    html {
        background-attachment: scroll;
     }
 }
