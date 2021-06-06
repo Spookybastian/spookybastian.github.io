@@ -50,9 +50,9 @@ p {
 
 /********** PROJECTS SECTION **********/
 
-.project-image {
+.project-preview {
     width: 100%;
-    height: auto;
+    height: 30rem;
 }
 
 .project {
@@ -68,7 +68,7 @@ p {
     border-bottom: 1px solid white;
 }
 
-figcaption {
+.project-name {
     text-shadow: 0 0 5px black;
 }
 
@@ -91,12 +91,24 @@ figcaption {
 }
 
 /* For Desktop */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+
+    .project-preview {
+        height: 22rem;
+    }
+
     .project,
-    .link {
+    .link,
+    .project-name {
         transition: 0.2s;
     }
     
+    .project-name:hover {
+        color: black;
+        text-shadow: 0 0 15px black;
+        transition: 0.2s;
+    }
+
     .project:hover {
         background-color: rgba(255, 255, 255, 0.3);
         box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
