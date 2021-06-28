@@ -1,0 +1,116 @@
+html {
+    height: 100%;
+    overflow: hidden;
+	color: black;
+	font-family: sans-serif, monospace;
+	font-size: 10px;
+	line-height: 1.6;
+}
+
+body {
+    background: white;
+	margin-left: 300px;
+	padding: 0;
+}
+
+/*Navigation Pane*/
+
+nav {
+	background: white;
+	position: fixed;
+	height: 100%;
+	width: 300px;
+	left: 0px;
+	top: 0px;
+	padding: 5px 0;
+	border-right: 2px solid grey;
+	overflow: hidden;
+}
+
+#navbar header {
+	padding: 15px;
+	font-size: 3rem;
+	line-height: 1;
+	text-align: right;
+}
+
+#links {
+	background: white;
+	margin: 10px 0;
+}
+
+.nav-link {
+	display: block;
+	width: 100%;
+	border-top: 1px solid black;
+	padding: 10px 15px;
+	font-size: 1.7rem;
+	text-decoration: none;
+	color: #555555;
+}
+
+.nav-link:hover {
+	background-color: black;
+	color: white;
+}
+
+/*Main Area*/
+
+main {
+	grid-area: main;
+}
+
+.main-section {
+	margin: 25px;
+}
+
+.main-section header {
+	font-size: 3rem;
+}
+
+p,
+li {
+	font-size: 1.5rem;
+	color: #555555;
+}
+
+li {
+	margin: 10px 0;
+}
+
+code {
+	line-height: 1.6;
+	font-size: 1.2rem;
+	color: black;
+	display: block;
+	padding: 15px 20px;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 15px;
+	background: #EEEEEE;
+}
+
+
+@media only screen and (orientation: portrait) {
+	nav {
+		position: static;
+		width: 100%;
+		border: none;
+	}
+	
+	#navbar header {
+		text-align: center;
+	}
+	
+	#links {
+		width: 90%;
+		margin: 0 auto;
+		height: 200px;
+		border: 2px solid black;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	body {
+		margin-left: 0;
+	}
+}

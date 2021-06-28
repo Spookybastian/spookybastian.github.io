@@ -1,0 +1,99 @@
+html {
+	height: 100%;
+    overflow: hidden;
+	background-image: url(https://i.postimg.cc/nrF2kLPm/stock.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: black;
+	font-family: sans-serif;
+	font-size: 1.5vmin;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+p,
+label,
+input,
+select,
+button{
+	font-size: 2rem;
+}
+
+label {
+	display: block;
+}
+
+
+body {
+	border: 2px solid green;
+	background-color: green;
+	width: 50%;
+	margin: 20px auto;
+}
+
+textarea {
+	width: 90%;
+	margin: 0 auto;
+}
+
+button {
+	background-color: white;
+	display: block;
+	margin: 10px auto;
+}
+
+button:hover {
+	background-color: green;
+	color: white;
+}
+
+#textarea,
+#dropdown,
+#name,
+#email,
+#number,
+#submit {
+	border: 2px solid green;
+	border-radius: 10px;
+}
+
+#radio-text,
+#languages,
+#textarea-label {
+	margin: 10px 0;
+}
+
+#textarea,
+#dropdown {
+	margin-top: 10px;
+}
+
+#name,
+#email,
+#number {
+	margin: 10px 0;
+	width: 95%;
+}
+
+#title,
+#description {
+	color: white;
+}
+
+#title,
+#description,
+#textarea-label {
+	text-align: center;
+}
+
+#survey-form {
+	background: white;
+	padding: 10px;
+}
+
+@media only screen and (orientation: portrait) {
+	html {font-size: 1vmax;}
+	body {width: 90%;}
+}
